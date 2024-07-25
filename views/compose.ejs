@@ -1,0 +1,24 @@
+<%- include('header'); -%>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <%= foo %>
+    <h2>Compose</h2>
+    Title
+    <form action="/compose" method="POST">
+        <input name="title"/>
+        <br/>
+        Post
+        <br/>
+        <input id="textboxid" name="post"/>
+        <br/>
+        <button>Publish</button>
+    </form>
+    <%- include("footer") %>
+</body>
+</html>
